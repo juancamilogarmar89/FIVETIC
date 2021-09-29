@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#horizontal_navbar {
+    width: 100%;
+    height: 80px;
+    background-color: burlywood;
+}
+
+#landing_logo{
+    width: 70px;
+}
+
+#irA_registro_usuario{
+    float: right;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: grey;
+    border: 1px solid whitesmoke;
+    padding: 3px;
+}
+
+#irA_registro_usuario:hover{
+    background-color: black;
+     color:blanchedalmond;
+}
+
+#irA_registro_usuario:active{
+    background-color: blue;
+     color:blanchedalmond;
+}
