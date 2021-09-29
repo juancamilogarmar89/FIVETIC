@@ -38,8 +38,9 @@
     display:block;
     margin-top: 10px;
     font-size: 15px;
-    width: 100%;
+    width: 90%;
     margin:0 auto;
+    float: center;
 }
 
 #form_nuevo_usuario{
