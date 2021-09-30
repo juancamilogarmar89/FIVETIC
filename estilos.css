@@ -39,12 +39,18 @@
     margin-top: 10px;
     font-size: 15px;
     width: 90%;
-    margin:0 auto;
+    margin: 10 auto;
     float: center;
 }
 
 #form_nuevo_usuario{
   background-color: burlywood;
   width: 250px;
-  padding: 0 10px 0 10px;
+  padding: 10px;
+}
+
+#form_nuevo_usuario button{
+    width: 150px;
+    padding: 10px;
+    float: center;
 }
