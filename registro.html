@@ -5,15 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Usuarios</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="./css/estile.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/estilos.css">-->
 </head>
 
 <body>
-    <form id="form_nuevo_usuario" action="">
-        <input type="text" id="dato_nombre_usuario" placeholder="Nombre"/>
-        <input type="number" id="dato_edad_usuario" placeholder="Edad"/>
-        <input type="password" id="dato_contrasena" placeholder="Password"/>
-        <button id="enviar_registro">Enviar Registro</button>
-    </form>    
+    <main>
+    <form id="form_nuevo_usuario" action="" class="formulario">
+    <!-- Grupo: Nombre -->
+    <div class="formulario__grupo" id="grupo__nombre">
+        <label for="nombre" class="formulario__label">Nombre</label>
+        <div class="formulario__grupo-input">
+            <input type="text" id="dato_nombre_usuario" class="formulario__input" placeholder="Nombre" name="nombre"/>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Digite su nombre completo separado por espacios y tenga en cuenta que la inicial de cada Nombre y Apellido debe ir en Mayúscula</p>
+    </div>
+    <!-- Grupo: Edad -->   
+    <div class="formulario__grupo" id="grupo__edad">
+        <label for="edad" class="formulario__label">Edad</label>
+        <div class="formulario__grupo-input">
+            <input type="number" id="dato_edad_usuario" class="formulario__input" placeholder="Edad" name="edad"/>
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error">Digite una edad vañida entres 13 y 110 años</p>
+    </div>
+    <!-- Grupo: Password -->
+    <div class="formulario__grupo" id="grupo__password">
+    <label for="password" class="formulario__label">Contraseña</label>
+    <div class="formulario__grupo-input">    
+    <input type="password" id="dato_contrasena" class="formulario__input" placeholder="Password" name="password"/>
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error">Digite su Contraseña tenga en cuenta Debe tener 6 o más caracteres y solo puede contener caracteres alfanuméricos. Es decir, letras de la A a la Z y los números del 0 al 9.</p>
+    </div>
+    <!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+    <!-- Grupo: Error no diligenciado -->
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+        <!-- Grupo: Boton -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button id="enviar_registro" type="submit">Enviar Registro</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+    </form>
+    </main>  
+    <script src="js/formulario.js"></script>  
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
